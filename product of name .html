@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>prasanna kumar</title>
+  <style>
+  form{
+      text-align: center;
+      display: inline-block;
+  }
+  </style>
+    </head>
+    <body>
+        <div id ="data">
+            <form>
+                product name:<input id="a" type:"text"><br><br>
+                product price:<input id="b" type:"number"><br><br>
+                <input id "show" type="button" value="submit" onclick=display()>
+            </form>
+            <p id="name"></p>
+            <p id ="price"></p>
+        </div>
+    </body>
+    <script>
+function display(){
+            event.preventDefault();
+            var pname=document.getElementById("a").value;
+            var pprice=document.getElementById("b").value;
+            document.getElementById("name").innerHTML=pname;
+            document.getElementById("price").innerHTML=pprice;
+        }
+
+        </script>
+</html>        

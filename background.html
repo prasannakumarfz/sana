@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>video</title>
+        <style>
+            *{margin:0;
+            padding: 0;}
+            .background{position:fixed;
+            width: 100%;
+            height:100%;
+            overflow: hidden;
+            top:0;
+            left:0;
+            z-index:-1000 ;
+            }
+            #video{position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100% ;}
+            .main{position: absolute;
+            width:100%;
+            height:100%;
+            z-index: 1000;
+            }
+
+            </style>
+    </head>
+    <body>
+        <div class="background">
+            <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="videoplayback.mp4" type="video/mp4">    
+            </video>
+        </div>
+        <div class="main">
+            <p style="text-align:center; color:red">haii prasanna kumar</p>
+            
+            <ul>
+                <li><a href="hello.html ">hello</a></li>
+                <li><a href="welcome.html">welcome</a></li>
+                <li><a href="to my.html">to my</a></li>
+                <li><a href="world.html">world</a></li>
+            </ul>
+         
+            
+        </div>
+
+        </body>
+    </html>
