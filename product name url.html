@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Task 4 </title>
+        <style>
+           #card{
+               max-width: 200px;
+               
+               /*border-radius:10PX;*/
+               
+               text-align: center; 
+           }
+           img{
+            max-width:200px;
+            max-height:200px
+           }    
+        </style>
+    </head>
+
+    <body>
+    <div id="data">
+        <form>
+            Product Name: <input id="a" type="text"> <br> <br>
+            Product Price: <input id="b" type="text"> <br> <br>
+            Product Image: <input id="c" type="text"> <br> <br>
+            <input id="show" type="button" value="Submit" onclick=display()>
+        </form>
+    </div>
+
+    <div id="card">
+        <p id="name"></p>
+        <img id="image">
+        <p id="price"></p>
+    </div>
+    </body>
+    <script>
+        function display(){
+            event.preventDefault();
+            var name=document.getElementById("a").value;
+            var pprice=document.getElementById("b").value;
+            var simage=document.getElementById("c").value;
+            document.getElementById("name").innerHTML="Product:" + name;
+            document.getElementById("image").src=simage;
+            document.getElementById("price").innerHTML="Price:" + pprice;
+            }
+        
+        
+    </script>
+</html>
